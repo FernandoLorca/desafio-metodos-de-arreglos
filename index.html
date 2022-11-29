@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
@@ -16,14 +22,35 @@
         <input type="text" />
         <button>Agregar</button>
       </div>
-      <div class="todoContainer__results">
-        <div class="todoContainer__results--total">
-          <p>Total: 0</p>
-          <p>Realizadas: 0</p>
+      <div class="todoContainer__todoList">
+        <div class="todoContainer__todoList--titles">
+          <div class="todoContainer__todoList--titles-results">
+            <h2>Resultados</h2>
+          </div>
         </div>
-        <div class="todoContainer__results--id">1</div>
-        <div class="todoContainer__results--task">
-          Hacer mercado <button>Completar</button> <button>Borrar</button>
+        <div class="todoContainer__todoList--titles">
+          <div class="todoContainer__todoList--titles-id">
+            <h2>ID</h2>
+          </div>
+        </div>
+        <div class="todoContainer__todoList--titles">
+          <div class="todoContainer__todoList--titles-task">
+            <h2>Tareas</h2>
+          </div>
+        </div>
+        <div class="todoContainer__todoList--counters">
+          <p>Total: <span>0</span></p>
+          <p>Realizadas: <span>0</span></p>
+        </div>
+        <div class="todoContainer__todoList--idNumber">
+          <p>1</p>
+        </div>
+        <div class="todoContainer__todoList--tasks">
+          <p>Hacer mercado</p>
+          <div class="todoContainer__todoList--tasks-doneDelete">
+            <input type="checkbox" />
+            <img src="./assets/img/x.svg" alt="delete task" />
+          </div>
         </div>
       </div>
     </section>

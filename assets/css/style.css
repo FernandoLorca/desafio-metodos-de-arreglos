@@ -1,3 +1,105 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
 
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #edecec;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+button {
+  width: 25%;
+  height: 3rem;
+  color: white;
+  background-color: #197742;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: ease opacity 200ms;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.todoContainer {
+  width: 65rem;
+  margin: 0 auto;
+}
+.todoContainer hr {
+  background-color: lightgrey;
+  border: 0.5px solid lightgrey;
+  margin-bottom: 1rem;
+}
+.todoContainer .todoContainer__inputButton {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.todoContainer .todoContainer__inputButton input {
+  width: 70%;
+  height: 3rem;
+}
+.todoContainer .todoContainer__todoList {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "title title title" "content content content";
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--counters span {
+  font-weight: 700;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks {
+  display: flex;
+  justify-content: space-between;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete input {
+  margin-right: 1rem;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete img {
+  height: 1.5rem;
+  cursor: pointer;
+  transition: ease opacity 200ms;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete img:hover {
+  opacity: 0.75;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete img:active {
+  opacity: 0.5;
+}
 
 /*# sourceMappingURL=style.css.map */
