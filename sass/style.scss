@@ -11,7 +11,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background-color: $color-grey;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 *,
@@ -89,8 +89,8 @@ button:active {
     display: grid;
     gap: 1rem;
     grid-template-areas:
-      "title title title"
-      "content content content";
+      'title title title'
+      'content content content';
 
     .todoContainer__todoList--counters {
       span {
@@ -102,6 +102,23 @@ button:active {
       display: flex;
       justify-content: space-between;
 
+      ul {
+        li {
+          svg {
+            cursor: pointer;
+            transition: ease opacity 200ms;
+          }
+
+          svg:hover {
+            opacity: 0.75;
+          }
+
+          svg:active {
+            opacity: 0.5;
+          }
+        }
+      }
+
       .todoContainer__todoList--tasks-doneDelete {
         input {
           margin-right: 1rem;
@@ -109,6 +126,7 @@ button:active {
 
         img {
           height: 1.5rem;
+          margin-bottom: 0.5rem;
           cursor: pointer;
           transition: ease opacity 200ms;
         }

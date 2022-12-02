@@ -87,11 +87,22 @@ button:active {
   display: flex;
   justify-content: space-between;
 }
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks ul li svg {
+  cursor: pointer;
+  transition: ease opacity 200ms;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks ul li svg:hover {
+  opacity: 0.75;
+}
+.todoContainer .todoContainer__todoList .todoContainer__todoList--tasks ul li svg:active {
+  opacity: 0.5;
+}
 .todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete input {
   margin-right: 1rem;
 }
 .todoContainer .todoContainer__todoList .todoContainer__todoList--tasks .todoContainer__todoList--tasks-doneDelete img {
   height: 1.5rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
   transition: ease opacity 200ms;
 }
